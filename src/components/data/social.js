@@ -1,19 +1,19 @@
 export const SocialData = [
     {
         platform: 'GitHub',
-        link: 'www.instagram.com/kyawt_98',
+        link: 'https://github.com/kyawt98',
         icon: require('../../assets/icons/github.png').default
     },
 
     {
         platform: 'Facebok',
-        link: 'www.facebook.com/kyawt98',
+        link: 'https://facebook.com/kyawt.1998',
         icon: require("../../assets/icons/facebook.png").default
     },
 
     {
         platform: 'Gamil',
-        link: 'kyawtkyawtsan1998@gmail.com',
+        link: 'https://instagram.com/kyawt_98',
         icon: require('../../assets/icons/instagram.png').default
     },
 ];

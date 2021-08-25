@@ -63,7 +63,7 @@
 
 .project-about{
     height: 20vh;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
 }
 .project-footer{
     height: 20%;
@@ -72,7 +72,7 @@
     justify-content: space-evenly;
 }
 .tags{
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 .github-icon{
     width: 25px;

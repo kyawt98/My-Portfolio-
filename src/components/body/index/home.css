@@ -52,3 +52,45 @@
     color: var(--title-color);
     font-size: 1.5rem;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .home-title .title::before{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width : 815px){
+    .home-title .title::before{
+        width: 220px;
+    }
+    
+    .home-title .title::after{
+        width: 230px;
+        transform: translateX(16rem);
+    }
+    .home-title .title:hover::before{
+        transform: translateX(16rem);
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .home-box{
+        height: 65vh;
+    }
+    .home-title .title{
+        font-size: 3rem;
+    }
+    .home-title .title::before{
+        width: 150px;
+    }
+    
+    .home-title .title::after{
+        width: 150px;
+        transform: translateX(11rem);
+    }
+    .home-title .title:hover::before{
+        transform: translateX(11rem);
+    }
+    
+}

@@ -6,6 +6,8 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import { useState } from 'react'
 import { blue } from '@material-ui/core/colors';
+import { motion } from 'framer-motion'
+
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (

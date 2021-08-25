@@ -67,7 +67,7 @@
         <div className={classes.root}
         style={{ width:1200}}
         >
-        <Tabs
+        {<Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
@@ -79,7 +79,7 @@
             <Tab style={{ textTransform: 'lowercase', fontWeight:100, fontSize:18,}} label="Soft Skills" {...a11yProps(0)} />
             <Tab style={{ textTransform: 'lowercase', fontWeight:100, fontSize:18,}} label="Programmings" {...a11yProps(1)} />
             <Tab style={{ textTransform: 'lowercase', fontWeight:100, fontSize:18,}} label="Frameworks" {...a11yProps(2)} />
-        </Tabs>
+        </Tabs>}
         <SkillsBox value={value} index={0}>
             <ul className="skill-nav">
                 <li className="skill-item">

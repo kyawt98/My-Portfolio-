@@ -1,4 +1,5 @@
 import './web.css'
+
 const Web = () => {
     return (
         <ul className="nav">
