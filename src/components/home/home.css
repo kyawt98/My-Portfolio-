@@ -1,0 +1,39 @@
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+    .home{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .sidebar{
+        margin: 50% 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .sidebar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 512px) {
+    .home{
+        width: 100%;
+    }
+}

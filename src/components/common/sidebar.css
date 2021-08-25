@@ -1,0 +1,43 @@
+.sidebar{
+    position: absolute;
+    right: 0;
+    margin:0 3rem;
+    margin-top: 50vh;
+}
+.sidebar span{
+    color: var(--text-color);
+    writing-mode: sideways-rl;
+    letter-spacing: 5px;
+    padding: .3rem;
+    position: relative;
+}
+.sidebar span::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: var(--title-color);
+    top: -2rem;
+}
+.sidebar span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: var(--secondary-color);
+    bottom: -2rem;
+}
+
+@media only screen and (max-width: 990px){
+    .sidebar{
+        margin: 50% 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .sidebar{
+        display: none;
+    }
+}

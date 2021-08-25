@@ -1,0 +1,19 @@
+.project-box{
+    /* height: 150vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+.project-title{
+    margin-bottom: 2rem;
+    margin-left: -16rem;
+}
+
+.project-container{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}

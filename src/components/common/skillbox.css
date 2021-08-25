@@ -1,0 +1,23 @@
+.skill-nav{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skill-item{
+    width: 50vw;
+    padding: .5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    position: relative;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+.item{
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 0.3);
+}

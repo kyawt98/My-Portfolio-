@@ -1,0 +1,27 @@
+.social-links{
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:50vh 3rem;
+}
+.social-item:first-child{
+    margin-left: 0;
+}
+.social-item{
+    margin-top: 1rem;
+}
+.social-icon{
+    width: 25px;
+    height: 25px;
+    opacity: 0.4;
+    transition: opacity 500ms ease;
+}
+.social-icon:hover,
+.social-icon:active{
+    opacity: 1;
+}

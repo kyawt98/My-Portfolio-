@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav .nav-item {
+    margin-left: 2rem;
+    transition: all 500ms ease;
+}
+
+.nav .nav-item .no{
+    color: var(--secondary-color);
+}
+
+.nav .nav-item a{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: text-decoration 500ms ease-in-out;
+}
+
+.nav .nav-item a:hover,
+.nav .nav-item a:active{
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-emphasis-color: var(--secondary-color);
+    text-decoration-thickness: 2px;
+    text-decoration-line: overline;
+}

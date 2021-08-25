@@ -1,0 +1,36 @@
+.skills{
+    height: 50vh;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.skills::before{
+    content: '';
+    display: block;
+    width: 5px;
+    border-bottom-right-radius: 5px;
+    top: 0;
+    margin-left: -2rem;
+    height: 100px;
+    position: absolute;
+    background: var(--primary-color);
+}
+
+.skills::after{
+    content: '';
+    display: block;
+    width: 100px;
+    border-bottom-right-radius: 5px;
+    top: 0;
+    margin-left: -2rem;
+    height: 6px;
+    position: absolute;
+    background: var(--primary-color);
+}
