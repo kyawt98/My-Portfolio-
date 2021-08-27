@@ -1,6 +1,10 @@
 import './home.css'
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
 const Home = () => {
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
     return (
         <div className="home-box">  
             <div className="home-info">

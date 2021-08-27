@@ -1,9 +1,15 @@
 import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
 import LaunchIcon from '@material-ui/icons/Launch';
 import './projectcard.css'
+import { motion } from 'framer-motion';
 const ProjectCard = ({ project }) => {
     return (
-        <div className="project">
+        <motion.div
+        initial={{ y:"50vh", opacity:0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 2, delay: 0.2,
+                    ease: [0.87, 0, 0.13, 1],}}
+        className="project">
             <div className="project-header">
                 <FolderOutlinedIcon className="foldericon" />
                 <a className="project-link" href={project.github}><img src={require('../../../assets/icons/github.svg').default} className="github-icon" /></a>
@@ -26,7 +32,7 @@ const ProjectCard = ({ project }) => {
                     })}
                 </span>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

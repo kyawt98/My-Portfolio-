@@ -7,13 +7,14 @@ import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import { useState } from 'react'
 import { blue } from '@material-ui/core/colors';
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <div className="header">
             <div className="logo">
-                <a href="#home"><img src={require('../../assets/icons/logo.png').default} /></a>
+                <Link to="/"><img src={require('../../assets/icons/logo.png').default} /></Link>
             </div>
             <div className="menu">
                 <div className="web-menu">
@@ -29,6 +30,7 @@ const Header = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 

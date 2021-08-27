@@ -1,14 +1,29 @@
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 import './contact.css'
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 const Contact = () => {
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
     return (
         <div className="contact">
             <div className="contact-box">
-                <h2 className="title"><span className="no">04. </span>Get in Touch</h2>
+                <motion.h2
+                initial={{ y:"-50vw", opacity:0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 2, delay: 0.2,
+                    ease: [0.87, 0, 0.13, 1],}}
+                className="title"><span className="no">04. </span>Get in Touch</motion.h2>
 
                 <div className="contact-container">
-                    <div className="contact-info">
+                    <motion.div
+                    initial={{ x:"100vw", opacity:0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2, delay: 0.2,
+                        ease: [0.87, 0, 0.13, 1],}}
+                    className="contact-info">
                         <div className="info">
                             <PhoneIphoneIcon className="icon" />
                             <span className="phno">+95 9764863478</span> <br/>
@@ -18,10 +33,15 @@ const Contact = () => {
                             <AlternateEmailIcon className="icon"/>
                             <span>kyawtkyawtsan1998@gmail.com</span>
                         </div>
-                    </div>
-                    <div className="contact-form">
+                    </motion.div>
+                    <motion.div
+                    initial={{ x:"-100vw", opacity:0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 2, delay: 0.2,
+                        ease: [0.87, 0, 0.13, 1],}}
+                    className="contact-form">
                         <a className="btnHi" href="#" type="button">Say Hello!</a>
-                    </div>
+                    </motion.div>
                     
                 </div>
             </div>

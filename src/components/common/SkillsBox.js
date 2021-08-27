@@ -9,6 +9,7 @@
     import LabelImportantOutlinedIcon from '@material-ui/icons/LabelImportantOutlined';
     import CodeIcon from '@material-ui/icons/Code';
     import './skillbox.css'
+    import { motion } from 'framer-motion'
 
     function SkillsBox(props) {
     const { children, value, index, ...other } = props;
@@ -64,7 +65,13 @@
     };
 
     return (
-        <div className={classes.root}
+        <motion.div
+        initial={{ x:"-100vw", opacity:0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 2,
+        ease: [0.87, 0, 0.13, 1],}}
+
+        className={classes.root}
         style={{ width:1200}}
         >
         {<Tabs
@@ -125,6 +132,6 @@
                 </li>
             </ul>
         </SkillsBox>
-        </div>
+        </motion.div>
     );
     }
