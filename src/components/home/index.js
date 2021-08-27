@@ -1,6 +1,6 @@
 import './home.css'
 import Header from '../header/index'
-import Body from '../body/index'
+import Body from '../pages/index'
 import Footer from '../footer/index'
 import Sidebar from '../common/Sidebar'
 import SocialBar from '../../components/common/SocialBar';
