@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 const Index = () => {
     return (        
-        <BrowserRouter basename="/kyawt">
+        <BrowserRouter>
             <div className="home">
                 <div>
                     <Header />
@@ -22,7 +22,7 @@ const Index = () => {
                 <Sidebar />
                 <SocialBar/>
             </div>
-        </BrowserRouter>
+         </BrowserRouter>
         
     )
 }

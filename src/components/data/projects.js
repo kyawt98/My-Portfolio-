@@ -31,7 +31,7 @@ export const ProjectData = [
         title: "Unsplash",
         about:"This app is aimed to view the high-resolution photos of Unsplash website (official).",
         tags: ["Kotlin","RestfulApi"],
-        demo:"www.htttp://project1.cohttps://github.com/kyawt98/PhotoGallery",
+        demo:"https://play.google.com/store/apps/details?id=com.kyawt.mycollection",
         github:"https://github.com/kyawt98/PhotoGallery",
         image: "https://images.unsplash.com/photo-1629755725339-efd38b8253bb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"
     }

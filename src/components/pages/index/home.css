@@ -1,17 +1,29 @@
 .home-box{
     height: 80vh;
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+.home-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .home-title .title{
     color: var(--secondary-color);
-    font-size: 4.5rem;
+    font-size: clamp(40px, 8vw, 80px);
+    text-transform: none;
     margin: 1rem 0;
     position: relative;
     transition: color 500ms ease-in;
     cursor: -moz-grab;
+}
+
+.home-title .hello{
+    font-size: clamp(1.1rem, 8vw, 12px);
 }
 
 .home-title .title::before{
@@ -53,6 +65,20 @@
     font-size: 1.5rem;
 }
 
+.resume-download{
+    text-decoration: none;
+    width: 210px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    padding: 1rem 2rem;
+    background: var(--title-color);
+    transition: opacity 300ms ease-in;
+    margin-top: 2rem;
+}
+
+.resume-download:hover{
+    opacity: 0.5;
+}
 
 @media only screen and (max-width: 1024px) {
     .home-title .title::before{
@@ -80,11 +106,7 @@
 
 @media only screen and (max-width: 512px) {
     .home-box{
-        height: 65vh;
-        margin-top: 5rem;
-    }
-    .home-title .title{
-        font-size: 3rem;
+        margin-top: 6rem;
     }
     .home-title .title::before{
         width: 150px;

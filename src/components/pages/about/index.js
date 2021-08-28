@@ -34,12 +34,6 @@ const About = () => {
                         My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.                    
                     </motion.p>
                 </div>
-                <motion.a
-                initial={{ y:"50vh", opacity:0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ type:"opacity",duration: 2, delay: 1,
-                    ease: [0.87, 0, 0.13, 1],}}
-                 className="resume-download" download href={require('../../../assets/resume.pdf').default}>Download Resume</motion.a>
             </div>
             <motion.div
             initial={{ x:"50vw", opacity:0 }}

@@ -28,8 +28,15 @@ const Home = () => {
                     </p>    
                     <p className="content">
                         I develop web applications with HTML, CSS, JavaScript and Laravel.
-                    </p>                
+                    </p> 
+                              
                 </motion.div>
+                <motion.a
+                initial={{ y:"50vh", opacity:0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ type:"opacity",duration: 2, delay: 1,
+                    ease: [0.87, 0, 0.13, 1],}}
+                 className="resume-download" download href={require('../../../assets/resume.pdf').default}>Download Resume</motion.a>     
             </div>
         </div>
     )

@@ -5,7 +5,6 @@ import SkillsBoxMobile from './mobile'
 const Skills = () => {
 
     return (
-        <section>
         <div className="skills">
             <motion.div
             initial={{ x:"30vw", opacity:0 }}
@@ -22,7 +21,6 @@ const Skills = () => {
                 <SkillsBoxMobile  />
             </div>
         </div>
-        </section>
     )
 }
 

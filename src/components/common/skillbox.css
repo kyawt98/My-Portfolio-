@@ -6,6 +6,7 @@
 }
 .skill-item{
     width: 30vw;
+    height: 100%;
     padding: .5rem 1rem;
     display: flex;
     flex-direction: column;

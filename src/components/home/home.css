@@ -6,13 +6,20 @@
 html{
     scroll-behavior: smooth;
 }
-
+/* 
 .home{
     display: flex;
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
 }
+.home-title .hello{
+    font-size: clamp(1.1rem, 8vw, 12px);
+}
+.home-title .title{
+    font-size: clamp(20px, 8vw, 10px);
+    text-transform: none;
+} */
 
 @media only screen and (max-width: 1024px) {
     .home{
@@ -36,4 +43,5 @@ html{
     .home{
         width: 100%;
     }
+
 }
