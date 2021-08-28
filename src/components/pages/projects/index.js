@@ -6,9 +6,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const Projects = () => {
-    useEffect(() => {
-        window.scroll(0,0)
-    }, [])
+
     const data = ProjectData
     return (
         <div className="project-box">  

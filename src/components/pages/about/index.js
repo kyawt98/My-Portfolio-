@@ -1,12 +1,10 @@
 import './about.css'
-import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const About = () => {
-    useEffect(() => {
-        window.scroll(0,0)
-    }, [])
+
     return (
+        <section>
         <div className="about-box">  
             <div className="about-info">
                 <motion.div
@@ -52,6 +50,7 @@ const About = () => {
                 <img src={require('../../../assets/kyawt.png').default} className="about-img" />
             </motion.div>
         </div>
+        </section>
     )
 }
 

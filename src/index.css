@@ -15,6 +15,10 @@ body {
   background: var(--background-color);
 }
 
+section{
+  height: auto !important;
+}
+
 p{
   color: var(--text-color);
   line-height: 1.5;

@@ -1,18 +1,19 @@
+import { Link } from 'react-router-dom'
 import './mobile.css'
 const Mobile = () => {
     return (
         <ul className="nav-mobile">
             <li className="nav-mobile-item">
-                <a href="#home">Home</a>
+                <Link to="/about">About</Link>
             </li>
             <li className="nav-mobile-item">
-                <a href="#skills">Skills</a>
+                <Link to="/skills">Skills</Link>
             </li>
             <li className="nav-mobile-item">
-                <a href="#projects">Projects</a>
+                <Link to="/projects">Projects</Link>
             </li>
             <li className="nav-mobile-item">
-                <a href="#contact">Contact</a>
+                <Link to="/contact">Contact</Link>
             </li>
         </ul>
     )

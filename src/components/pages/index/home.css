@@ -61,6 +61,10 @@
 }
 
 @media only screen and (max-width : 815px){
+    .home-box{
+        margin-top: 8rem;
+    }
+
     .home-title .title::before{
         width: 220px;
     }
@@ -77,6 +81,7 @@
 @media only screen and (max-width: 512px) {
     .home-box{
         height: 65vh;
+        margin-top: 5rem;
     }
     .home-title .title{
         font-size: 3rem;
@@ -87,10 +92,10 @@
     
     .home-title .title::after{
         width: 150px;
-        transform: translateX(11rem);
+        transform: translateX(7rem);
     }
     .home-title .title:hover::before{
-        transform: translateX(11rem);
+        transform: translateX(7rem);
     }
     
 }

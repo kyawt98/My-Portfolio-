@@ -66,13 +66,13 @@
 
     return (
         <motion.div
-        initial={{ x:"-100vw", opacity:0 }}
+        initial={{ x:"-50vw", opacity:0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 2,
         ease: [0.87, 0, 0.13, 1],}}
 
         className={classes.root}
-        style={{ width:1200}}
+        style={{ width:"100%", height:"100%"}}
         >
         {<Tabs
             orientation="vertical"
@@ -81,7 +81,7 @@
             onChange={handleChange}
             aria-label="Vertical tabs example"
             className={classes.tabs}
-            style={{ marginTop:25, paddingLeft:60, width:600}}
+            style={{ marginTop:25, paddingLeft:10, width:300}}
         >
             <Tab style={{ textTransform: 'lowercase', fontWeight:100, fontSize:18,}} label="Soft Skills" {...a11yProps(0)} />
             <Tab style={{ textTransform: 'lowercase', fontWeight:100, fontSize:18,}} label="Programmings" {...a11yProps(1)} />

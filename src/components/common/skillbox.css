@@ -5,8 +5,8 @@
     flex-direction: column;
 }
 .skill-item{
-    width: 50vw;
-    padding: .5rem 3rem;
+    width: 30vw;
+    padding: .5rem 1rem;
     display: flex;
     flex-direction: column;
 }

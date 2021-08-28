@@ -4,10 +4,9 @@ import './contact.css'
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 const Contact = () => {
-    useEffect(() => {
-        window.scroll(0,0)
-    }, [])
+
     return (
+        <section>
         <div className="contact">
             <div className="contact-box">
                 <motion.h2
@@ -47,6 +46,7 @@ const Contact = () => {
             </div>
             
         </div>
+        </section>
     )
 }
 

@@ -1,9 +1,9 @@
 .project{
     background: var(--background-color);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    width: 350px;
+    width: 300px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 350px;
+    height: 300px;
     margin: .3rem .3rem;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@
     bottom: 0;
     right: 0;
     margin-top: 2rem;
-    margin-left: 12.5rem;
+    margin-left: 9.3rem;
     height: 3px;
     border-radius: 8px;
     background: var(--title-color);
@@ -54,11 +54,11 @@
 }
 
 .project:hover.project::before{
-    transform: translateX(12.5rem);
+    transform: translateX(9.3rem);
 }
 
 .project:hover.project::after{
-    transform: translateX(-12.5rem);
+    transform: translateX(-9.3rem);
 }
 
 .project-about{

@@ -19,31 +19,34 @@
     color: #fff;
     margin-top: 1rem;
 }
-.notfound-content h1 span{
-    font-size: 1.2rem;
+.notfound-content .dontworry{
+    color: var(--text-color);
+    font-size: 1rem;
 }
-.notfound-content .eat{
+.notfound-content .dontworry .eat{
     cursor: pointer;
     position: relative;
+    transition: all 500ms ease-in;
 }
 
-.notfound-content h1 .eat:hover{
+.notfound-content .dontworry .eat:hover{
     text-decoration: line-through;
     text-decoration-color: var(--title-color);
     text-decoration-thickness: 2px;
     opacity: 0.5;
 }
 
-.notfound-content .eat::before{
+.notfound-content .dontworry .eat::before{
     content: 'will';
     cursor: pointer;
     position: absolute;
     margin-top: -1rem;
     opacity: 0;
     color: var(--title-color);
+    transition: opacity 300ms ease-in;
 }
 
-.notfound-content h1 .eat:hover::before{
+.notfound-content .dontworry .eat:hover::before{
     opacity: 1;
 }
 
@@ -51,10 +54,12 @@
     color: var(--title-color);
     font-size: 1.5rem;
 }
-.notfound-content p span{
+.notfound-content p .errorcode{
     color: var(--primary-color);
     font-size: 3rem;
     font-weight: 800;
+    cursor: pointer;
+    transition: transform 500ms ease;
 }
 .error-img{
     justify-self: flex-end;
