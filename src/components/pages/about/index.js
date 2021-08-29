@@ -1,11 +1,13 @@
 import './about.css'
 import { motion } from 'framer-motion'
-
+import { useEffect } from 'react'
 const About = () => {
-
+    useEffect(() => {
+        window.scroll(0,0)
+    }, [])
     return (
         <section>
-        <div className="about-box">  
+        <div id="about" className="about-box">  
             <div className="about-info">
                 <motion.div
                 initial={{ y:"-10vh", opacity:0 }}

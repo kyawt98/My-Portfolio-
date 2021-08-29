@@ -1,9 +1,12 @@
 :root{
-  --primary-color: #0064F1;
-  --secondary-color: #F3A5B8;
-  --text-color : #8892B0;
-  --title-color:#E3BD11;
-  --background-color: #000;
+  --primary-color: #155F40;
+  --secondary-color: #B82D13;
+  --text-color : #F0F1F3;
+  --title-color:#F2C03E;
+  --background-color: #272D44;
+}
+a{
+  color: var(--text-color) ;
 }
 body {
   margin: 0;
@@ -13,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   background: var(--background-color);
+  filter:saturate(90%);
 }
 
 section{
@@ -24,7 +28,3 @@ p{
   line-height: 1.5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

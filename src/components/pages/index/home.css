@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 1rem;
 }
 .home-info{
     height: 100%;
@@ -42,7 +43,7 @@
     height: 3px;
     border-radius: 10px;
     width: 250px;
-    transform: translateX(26rem);
+    transform: translateX(30rem);
     background: var(--primary-color);
     transition: transform 500ms ease-in-out, background 500ms ease-in-out;
 }
@@ -56,7 +57,7 @@
 }
 
 .home-title .title:hover::before{
-    transform: translateX(26rem);
+    transform: translateX(30rem);
     background: var(--secondary-color);
 }
 

@@ -16,7 +16,7 @@ const Body = () => {
                 <Route path="/skills" component={ Skills }  />
                 <Route path="/projects" component={ Projects }  />
                 <Route path="/contact" component={ Contact }  />
-                <Route component={ NotFound } />
+                <Route path="*" component={ NotFound } />
             </Switch>
         </div>
     )

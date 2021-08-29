@@ -1,5 +1,5 @@
 .about-box{
-    height: 90vh;
+    height: 85vh;
     margin :1rem 5rem;
     display: flex;
     justify-content: center;
@@ -64,12 +64,13 @@
     object-fit: cover;
     border-radius: 5px;
     transition: opacity 500ms ease;
+    filter:hue-rotate(300deg) ;
 }
 
 .about-img:hover{
     opacity: 0.8;
+    filter:hue-rotate(0) ;
 }
-
 
 @media only screen and (max-width: 1024px) {
     .about-box{

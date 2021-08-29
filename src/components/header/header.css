@@ -1,18 +1,19 @@
 .header{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     position:fixed;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.12);
 }
 
 .menu{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 3rem;
 }
 .mobile-menu{
     display: none;
@@ -26,6 +27,7 @@
 .logo{
     display: flex;
     cursor: pointer;
+    margin-left: 3rem;
 }
 .logo img{
     width: 35px;
@@ -42,12 +44,18 @@
 
 @media only screen and (max-width: 1024px) {
     .header{
-        width: 90%;
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 512px) {
     .header{
         width: 100%;
+    }
+    .menu{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 0;
     }
 }

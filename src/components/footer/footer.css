@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+    height: 50px;
+}
+.footer-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myname{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: var(--secondary-color);
+}

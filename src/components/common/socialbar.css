@@ -36,10 +36,3 @@
         display: none;
     }
 }
-@media only screen and (max-width: 512px) {
-    .social-links{
-        display: none;
-    }
-}
-
-
